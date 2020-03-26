@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e16accae-b3f1-4da5-96e7-f413d94ecf25" name="Default Changelist" comment="" />
+    <list default="true" id="e16accae-b3f1-4da5-96e7-f413d94ecf25" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser/parser.go" beforeDir="false" afterPath="$PROJECT_DIR$/parser/parser.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser/parser_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/parser/parser_test.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,10 +38,10 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/main.go" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
-  <component name="RunManager" selected="Go Build.go build monkey">
+  <component name="RunManager" selected="Go Test.go test monkey/parser">
     <configuration name="go build monkey" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
       <module name="monkey" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -70,10 +74,34 @@
       <filePath value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
+    <configuration name="go test monkey/parser" type="GoTestRunConfiguration" factoryName="Go Test" nameIsGenerated="true">
+      <module name="monkey" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <go_parameters value="-i" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="monkey/parser" />
+      <directory value="$PROJECT_DIR$/lexer" />
+      <filePath value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Go Build.go build monkey" />
+      <item itemvalue="Go Test.go test monkey/parser" />
       <item itemvalue="Go Test.go test monkey/lexer" />
     </list>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -93,29 +121,34 @@
       <screen x="0" y="0" width="2560" height="1395" />
     </state>
     <state x="879" y="359" key="#GOROOT/0.0.2560.1395/2560.540.1600.900@0.0.2560.1395" timestamp="1581651497814" />
-    <state x="743" y="350" width="1124" height="839" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581708629387">
-      <screen x="0" y="0" width="2560" height="1395" />
+    <state x="556" y="235" width="1124" height="839" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585195835508">
+      <screen x="0" y="0" width="1920" height="1043" />
     </state>
+    <state x="556" y="235" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1043@0.0.1920.1043" timestamp="1585195835508" />
     <state x="743" y="350" width="1124" height="839" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1395/2560.540.1600.900@0.0.2560.1395" timestamp="1581708629387" />
     <state x="1042" y="451" key="FileChooserDialogImpl" timestamp="1581708608174">
       <screen x="0" y="0" width="2560" height="1395" />
     </state>
     <state x="1042" y="451" key="FileChooserDialogImpl/0.0.2560.1395/2560.540.1600.900@0.0.2560.1395" timestamp="1581708608174" />
-    <state width="2504" height="379" key="GridCell.Tab.0.bottom" timestamp="1581708632571">
-      <screen x="0" y="0" width="2560" height="1395" />
+    <state width="1874" height="253" key="GridCell.Tab.0.bottom" timestamp="1585195840486">
+      <screen x="0" y="0" width="1920" height="1043" />
     </state>
+    <state width="1874" height="253" key="GridCell.Tab.0.bottom/0.0.1920.1043@0.0.1920.1043" timestamp="1585195840486" />
     <state width="2504" height="379" key="GridCell.Tab.0.bottom/0.0.2560.1395/2560.540.1600.900@0.0.2560.1395" timestamp="1581708632571" />
-    <state width="2504" height="379" key="GridCell.Tab.0.center" timestamp="1581708632571">
-      <screen x="0" y="0" width="2560" height="1395" />
+    <state width="1874" height="253" key="GridCell.Tab.0.center" timestamp="1585195840485">
+      <screen x="0" y="0" width="1920" height="1043" />
     </state>
+    <state width="1874" height="253" key="GridCell.Tab.0.center/0.0.1920.1043@0.0.1920.1043" timestamp="1585195840485" />
     <state width="2504" height="379" key="GridCell.Tab.0.center/0.0.2560.1395/2560.540.1600.900@0.0.2560.1395" timestamp="1581708632571" />
-    <state width="2504" height="379" key="GridCell.Tab.0.left" timestamp="1581708632571">
-      <screen x="0" y="0" width="2560" height="1395" />
+    <state width="1874" height="253" key="GridCell.Tab.0.left" timestamp="1585195840484">
+      <screen x="0" y="0" width="1920" height="1043" />
     </state>
+    <state width="1874" height="253" key="GridCell.Tab.0.left/0.0.1920.1043@0.0.1920.1043" timestamp="1585195840484" />
     <state width="2504" height="379" key="GridCell.Tab.0.left/0.0.2560.1395/2560.540.1600.900@0.0.2560.1395" timestamp="1581708632571" />
-    <state width="2504" height="379" key="GridCell.Tab.0.right" timestamp="1581708632571">
-      <screen x="0" y="0" width="2560" height="1395" />
+    <state width="1874" height="253" key="GridCell.Tab.0.right" timestamp="1585195840485">
+      <screen x="0" y="0" width="1920" height="1043" />
     </state>
+    <state width="1874" height="253" key="GridCell.Tab.0.right/0.0.1920.1043@0.0.1920.1043" timestamp="1585195840485" />
     <state width="2504" height="379" key="GridCell.Tab.0.right/0.0.2560.1395/2560.540.1600.900@0.0.2560.1395" timestamp="1581708632571" />
     <state x="780" y="332" key="SettingsEditor" timestamp="1581651620371">
       <screen x="0" y="0" width="2560" height="1395" />
