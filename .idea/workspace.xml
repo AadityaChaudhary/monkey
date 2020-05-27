@@ -1,8 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="e16accae-b3f1-4da5-96e7-f413d94ecf25" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ast/ast_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ast/ast.go" beforeDir="false" afterPath="$PROJECT_DIR$/ast/ast.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/parser/parser.go" beforeDir="false" afterPath="$PROJECT_DIR$/parser/parser.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/parser/parser_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/parser/parser_test.go" afterDir="false" />
     </list>
@@ -29,11 +49,11 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -41,7 +61,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
-  <component name="RunManager" selected="Go Test.go test monkey/parser">
+  <component name="RunManager" selected="Go Test.go test monkey/ast">
     <configuration name="go build monkey" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
       <module name="monkey" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -63,6 +83,17 @@
       <filePath value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
+    <configuration name="go test monkey/ast" type="GoTestRunConfiguration" factoryName="Go Test" nameIsGenerated="true">
+      <module name="monkey" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <go_parameters value="-i" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="monkey/ast" />
+      <directory value="$PROJECT_DIR$/lexer" />
+      <filePath value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
     <configuration name="go test monkey/lexer" type="GoTestRunConfiguration" factoryName="Go Test" nameIsGenerated="true">
       <module name="monkey" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -74,34 +105,11 @@
       <filePath value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go test monkey/parser" type="GoTestRunConfiguration" factoryName="Go Test" nameIsGenerated="true">
-      <module name="monkey" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <go_parameters value="-i" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="monkey/parser" />
-      <directory value="$PROJECT_DIR$/lexer" />
-      <filePath value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Go Build.go build monkey" />
-      <item itemvalue="Go Test.go test monkey/parser" />
+      <item itemvalue="Go Test.go test monkey/ast" />
       <item itemvalue="Go Test.go test monkey/lexer" />
     </list>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -114,49 +122,44 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="879" y="359" key="#GOROOT" timestamp="1581651497814">
-      <screen x="0" y="0" width="2560" height="1395" />
-    </state>
-    <state x="879" y="359" key="#GOROOT/0.0.2560.1395/2560.540.1600.900@0.0.2560.1395" timestamp="1581651497814" />
-    <state x="556" y="235" width="1124" height="839" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585195835508">
-      <screen x="0" y="0" width="1920" height="1043" />
+    <state x="3032" y="422" width="1124" height="839" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590603036962">
+      <screen x="1920" y="0" width="3840" height="2160" />
     </state>
     <state x="556" y="235" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1043@0.0.1920.1043" timestamp="1585195835508" />
-    <state x="743" y="350" width="1124" height="839" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1395/2560.540.1600.900@0.0.2560.1395" timestamp="1581708629387" />
-    <state x="1042" y="451" key="FileChooserDialogImpl" timestamp="1581708608174">
-      <screen x="0" y="0" width="2560" height="1395" />
-    </state>
-    <state x="1042" y="451" key="FileChooserDialogImpl/0.0.2560.1395/2560.540.1600.900@0.0.2560.1395" timestamp="1581708608174" />
-    <state width="1874" height="253" key="GridCell.Tab.0.bottom" timestamp="1585195840486">
-      <screen x="0" y="0" width="1920" height="1043" />
+    <state x="3032" y="422" key="#com.intellij.execution.impl.EditConfigurationsDialog/5760.0.900.1600/0.1080.1920.1080/1920.0.3840.2160@1920.0.3840.2160" timestamp="1590603036962" />
+    <state width="3754" height="598" key="GridCell.Tab.0.bottom" timestamp="1590603066899">
+      <screen x="1920" y="0" width="3840" height="2160" />
     </state>
     <state width="1874" height="253" key="GridCell.Tab.0.bottom/0.0.1920.1043@0.0.1920.1043" timestamp="1585195840486" />
-    <state width="2504" height="379" key="GridCell.Tab.0.bottom/0.0.2560.1395/2560.540.1600.900@0.0.2560.1395" timestamp="1581708632571" />
-    <state width="1874" height="253" key="GridCell.Tab.0.center" timestamp="1585195840485">
-      <screen x="0" y="0" width="1920" height="1043" />
+    <state width="3754" height="598" key="GridCell.Tab.0.bottom/5760.0.900.1600/0.1080.1920.1080/1920.0.3840.2160@1920.0.3840.2160" timestamp="1590603066899" />
+    <state width="3754" height="598" key="GridCell.Tab.0.center" timestamp="1590603066899">
+      <screen x="1920" y="0" width="3840" height="2160" />
     </state>
     <state width="1874" height="253" key="GridCell.Tab.0.center/0.0.1920.1043@0.0.1920.1043" timestamp="1585195840485" />
-    <state width="2504" height="379" key="GridCell.Tab.0.center/0.0.2560.1395/2560.540.1600.900@0.0.2560.1395" timestamp="1581708632571" />
-    <state width="1874" height="253" key="GridCell.Tab.0.left" timestamp="1585195840484">
-      <screen x="0" y="0" width="1920" height="1043" />
+    <state width="3754" height="598" key="GridCell.Tab.0.center/5760.0.900.1600/0.1080.1920.1080/1920.0.3840.2160@1920.0.3840.2160" timestamp="1590603066899" />
+    <state width="3754" height="598" key="GridCell.Tab.0.left" timestamp="1590603066899">
+      <screen x="1920" y="0" width="3840" height="2160" />
     </state>
     <state width="1874" height="253" key="GridCell.Tab.0.left/0.0.1920.1043@0.0.1920.1043" timestamp="1585195840484" />
-    <state width="2504" height="379" key="GridCell.Tab.0.left/0.0.2560.1395/2560.540.1600.900@0.0.2560.1395" timestamp="1581708632571" />
-    <state width="1874" height="253" key="GridCell.Tab.0.right" timestamp="1585195840485">
-      <screen x="0" y="0" width="1920" height="1043" />
+    <state width="3754" height="598" key="GridCell.Tab.0.left/5760.0.900.1600/0.1080.1920.1080/1920.0.3840.2160@1920.0.3840.2160" timestamp="1590603066899" />
+    <state width="3754" height="598" key="GridCell.Tab.0.right" timestamp="1590603066899">
+      <screen x="1920" y="0" width="3840" height="2160" />
     </state>
     <state width="1874" height="253" key="GridCell.Tab.0.right/0.0.1920.1043@0.0.1920.1043" timestamp="1585195840485" />
-    <state width="2504" height="379" key="GridCell.Tab.0.right/0.0.2560.1395/2560.540.1600.900@0.0.2560.1395" timestamp="1581708632571" />
-    <state x="780" y="332" key="SettingsEditor" timestamp="1581651620371">
-      <screen x="0" y="0" width="2560" height="1395" />
-    </state>
-    <state x="780" y="332" key="SettingsEditor/0.0.2560.1395/2560.540.1600.900@0.0.2560.1395" timestamp="1581651620371" />
-    <state width="623" height="498" key="SwitcherDM" timestamp="1581707128807">
-      <screen x="0" y="0" width="2560" height="1395" />
-    </state>
-    <state width="623" height="498" key="SwitcherDM/0.0.2560.1395/2560.540.1600.900@0.0.2560.1395" timestamp="1581707128807" />
+    <state width="3754" height="598" key="GridCell.Tab.0.right/5760.0.900.1600/0.1080.1920.1080/1920.0.3840.2160@1920.0.3840.2160" timestamp="1590603066899" />
   </component>
 </project>
