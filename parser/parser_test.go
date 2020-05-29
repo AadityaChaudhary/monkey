@@ -3,14 +3,11 @@ package parser
 import (
 	"monkey/ast"
 	"monkey/lexer"
-
 	"testing"
 )
-func TestLetStatement(t *testing.T) {
-	input := `
-	return 5;
-	return 10;
-	return 993322;`
+func Test(t *testing.T) {
+
+	input := `5;`
 
 	l := lexer.New(input)
 
@@ -22,57 +19,40 @@ func TestLetStatement(t *testing.T) {
 	if program == nil {
 		t.Fatalf("returned nil")
 	}
-	if len(program.Statements) != 3 {
+	if len(program.Statements) != 1 {
 
-		t.Fatalf("program should have 3 statements, got %d", len(program.Statements))
+		t.Fatalf("program should have 1 statements, got %d", len(program.Statements))
 	}
-	//tests := [] struct {
-	//	expectedIdentifier string
-	//}{
-	//	{"x"},
-	//	{"y"},
-	//	{"foobar"},
-	//}
 
-	for _, statement := range program.Statements {
-		returnStatement, ok := statement.(*ast.ReturnStatement)
+
+
+		statement, ok := program.Statements[0].(*ast.ExpressionStatement)
 
 		if !ok {
-			t.Errorf("statement not a return statement, got %T", statement)
-			continue
+			t.Errorf("statement not am identifier, got %T", statement)
+
 		}
-		if returnStatement.TokenLiteral() != "return" {
-			t.Errorf("returnStatement.TokenLiteral does not return 'return', got %q", returnStatement.TokenLiteral())
+		integer,ok := statement.Expression.(*ast.IntegerLiteral)
+
+		if !ok {
+			t.Errorf("expression not an identifier, got %t",statement.Expression)
 		}
-	}
+		if integer.Value != 5 {
+			t.Errorf("value not 5, got = %d", integer.Value)
+		}
+		if integer.TokenLiteral() != "5" {
+			t.Errorf("token literal not foobar, got = %s", integer.TokenLiteral())
+		}
+
 
 }
 
-func testLetStatement(t *testing.T, s ast.Statement, name string) bool {
-	if s.TokenLiteral() != "let" {
-		t.Errorf("token literal not 'let', got=%q", s.TokenLiteral())
-		return false;
-	}
-
-	letStmt, ok := s.(*ast.LetStatement)
+func testIntegerLiteral(t *testing.T, il ast.Expression, value int64) bool {
+	integer, ok := il.(*ast.IntegerLiteral)
 
 	if !ok {
-		t.Errorf("s not a let statement, got %T", s)
-		return false
+		t.Errorf("not an integer literal")
 	}
-
-	if letStmt.Name.Value != name {
-		t.Errorf("letstmt. name . value not '%s' got=%s",name, letStmt.Name.Value)
-		return false
-	}
-
-	if letStmt.Name.TokenLiteral() != name {
-		t.Errorf("letstmt. name . TOKEN LITERAL not '%s' got=%s",name, letStmt.Name)
-		return false
-	}
-	return true
-
-
 }
 
 func checkParserErrors( t *testing.T, p *Parser) {
